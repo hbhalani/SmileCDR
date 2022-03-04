@@ -18,11 +18,11 @@ This project is a skeleton project for using [HAPI FHIR](https://hapifhir.io) to
 
 ### Basic Tasks:
 
-* [ ] Modify `SampleClient` so that it prints the first and last name, and birth date of each Patient to the screen
+* [.] Modify `SampleClient` so that it prints the first and last name, and birth date of each Patient to the screen
 
-* [ ] Sort the output so that the results are ordered by the patient's first name
+* [.] Sort the output so that the results are ordered by the patient's first name
 
-* [ ] Commit your work
+* [.] Commit your work
 
 ### Intermediate Tasks:
 

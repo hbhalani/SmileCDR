@@ -30,7 +30,8 @@ public class SampleClient {
 	        	String[] parts = s.split("\"");
 	        	String fname = parts[0];
 	        	fname = fname.substring(0, 1).toUpperCase() + fname.substring(1);
-	        	String lname = "Smith";
+	        	String lname = response.getEntry().get(i).getResource().getChildByName("name").getValues().get(0).getNamedProperty("family").getValues().get(0).toString();
+	        	lname = lname.substring(0, 1).toUpperCase() + lname.substring(1);
 	        	User u = new User(fname, lname, dob);
 	        	users.add(u);
         	}
@@ -40,7 +41,8 @@ public class SampleClient {
 	        	String[] parts = s.split("\"");
 	        	String fname = parts[0];
 	        	fname = fname.substring(0, 1).toUpperCase() + fname.substring(1);
-	        	String lname = "Smith";
+	        	String lname = response.getEntry().get(i).getResource().getChildByName("name").getValues().get(0).getNamedProperty("family").getValues().get(0).toString();
+	        	lname = lname.substring(0, 1).toUpperCase() + lname.substring(1);
 	        	String dob = "null";
 	        	User u = new User(fname, lname, dob);
 	        	users.add(u);
